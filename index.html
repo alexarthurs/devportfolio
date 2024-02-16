@@ -281,21 +281,6 @@
 	<!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
 	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
 	<script>
-		$(function () {
-			$(".signage-demo").click(function () {
-				Swal.queue([{
-					title: 'Login Credentials',
-					confirmButtonText: 'Go to Signage App',
-					html: '<b>Username:</b> admin@signage.com <br/> ' +
-						'<b>Password:</b> password',
-					showLoaderOnConfirm: true,
-					preConfirm: () => {
-						window.open("https://digitalsignage.alexarthurs.com");
-						return true;
-					}
-				}])
-			});
-		});
 	</script>
 
 </html>
